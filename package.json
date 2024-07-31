@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"description": "Vite 커스텀 템플릿을 사용한 React 프로젝트 스캐폴딩",
 	"scripts": {
-		"dev": "vite",
+		"dev": "vite --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "eslint \"./src/**\" --report-unused-disable-directives --ignore-pattern .gitignore"
