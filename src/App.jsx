@@ -1,8 +1,11 @@
+import Main from './pages/Main';
+
 function App() {
   return (
-    <div className="App">
-      <h1>React 웹 앱</h1>
-    </div>
+    <>
+      <h1>React + Vite 커스텀 템플릿</h1>
+      <Main />
+    </>
   );
 }
 
