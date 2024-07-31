@@ -18,7 +18,6 @@ degit heydoopal/vite-react <프로젝트_이름>
 
 ![](https://velog.velcdn.com/images/zidoopal/post/35db48d4-7a2c-41db-b46a-9a513ae1c1aa/image.png)
 
-
 <hr />
 
 ### 설치한 패키지
@@ -62,7 +61,7 @@ pnpm add eslint-plugin-react-hooks eslint-plugin-react-refresh -D
 
 <hr />
 
-### 궁금한 점 ❓
+## 궁금한 점 ❓
 
 ![](https://velog.velcdn.com/images/zidoopal/post/6ae4ad37-aab6-418d-965e-c66c2d85e589/image.png)
 
@@ -82,9 +81,37 @@ pnpm add eslint-plugin-react-hooks eslint-plugin-react-refresh -D
 
 <hr />
 
-### 느낀점 💬
+## 🎉 해결방법 / 💡 야무쌤 답변
 
-개발자가 되려면 왜? 라는 질문을 늘 던져야 한다고 들었는데, <br> 
+**A. 답변**
+
+### 문제 원인
+
+- 해당 문제가 발생한 이유는 VS Code 에디터의 JavaScript 유효성 검사 기능이 활성 상태이기 때문입니다.
+
+```JSON
+{
+	"javascript.validate.enable": true,
+}
+```
+
+### 문제 해결
+
+JavaScript 유효성 검사 기능을 끌 경우, 더 이상 타입 오류로 인식하지 않습니다.
+
+**.vscode/settings.json**
+
+```JSON
+{
+	"javascript.validate.enable": false,
+}
+```
+
+<hr />
+
+## 느낀점 💬
+
+개발자가 되려면 왜? 라는 질문을 늘 던져야 한다고 들었는데, <br>
 사실 편한게 좋고 남들이 다 하는거면 좋은 거겠거니 하면서 따라해왔었습니당. <br>
 <br>
 
